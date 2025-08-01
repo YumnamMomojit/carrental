@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxigo - Taxi Booking Mobile App</title>
+  <link rel="icon" href="assets/images/favicon/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/intlTelInput.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+  <div class="site-content">
+    <!-- Preloader start -->
+    <div class="loader-mask">
+      <div class="loading-window">
+        <div class="car">
+          <div class="strike"></div>
+          <div class="strike strike2"></div>
+          <div class="strike strike3"></div>
+          <div class="strike strike4"></div>
+          <div class="strike strike5"></div>
+          <div class="car-detail spoiler"></div>
+          <div class="car-detail back"></div>
+          <div class="car-detail center"></div>
+          <div class="car-detail center1"></div>
+          <div class="car-detail front"></div>
+          <div class="car-detail wheel"></div>
+          <div class="car-detail wheel wheel2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- Header start -->
+    <header id="top-header">
+      <div class="header-wrap">
+        <div class="header-back">
+          <a href="javascript:history.go(-1)">
+            <img src="assets/svg/back-btn-white.svg" alt="back-btn">
+          </a>
+        </div>
+        <div class="header-name">
+          <p>Profile Edit</p>
+        </div>
+      </div>
+      <div class="boder"></div>
+    </header>
+    <!-- Header end -->
+    <!-- Profile edit screen content start -->
+    <section id="profile-edit">
+      <div class="container">
+        <div class="profile-edit-wrap">
+          <h1 class="d-none">Hidden</h1>
+          <div class="profile-edit-full mt-32">
+            <div class="profile-edit-first">
+              <div class="profile-edit-img">
+                <img src="assets/images/account/edit-img.png" alt="profile-img" class="profile-pic">
+                <div class="image-input">
+                  <input type="file" accept="image/*" id="imageInput" class="file-upload">
+                  <label for="imageInput" class="image-button">
+                    <svg class="upload-button" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_311_3053" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_311_3053)">
+                        <path d="M5 7H6C6.53043 7 7.03914 6.78929 7.41421 6.41421C7.78929 6.03914 8 5.53043 8 5C8 4.73478 8.10536 4.48043 8.29289 4.29289C8.48043 4.10536 8.73478 4 9 4H15C15.2652 4 15.5196 4.10536 15.7071 4.29289C15.8946 4.48043 16 4.73478 16 5C16 5.53043 16.2107 6.03914 16.5858 6.41421C16.9609 6.78929 17.4696 7 18 7H19C19.5304 7 20.0391 7.21071 20.4142 7.58579C20.7893 7.96086 21 8.46957 21 9V18C21 18.5304 20.7893 19.0391 20.4142 19.4142C20.0391 19.7893 19.5304 20 19 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V9C3 8.46957 3.21071 7.96086 3.58579 7.58579C3.96086 7.21071 4.46957 7 5 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16C13.6569 16 15 14.6569 15 13C15 11.3431 13.6569 10 12 10C10.3431 10 9 11.3431 9 13C9 14.6569 10.3431 16 12 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="profile-edit-second mt-32">
+              <div class="profile-edit-second-full">
+                <form>
+                  <div class="form-details-sign-in">
+                    <span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_330_7195" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                          <rect width="24" height="24" fill="white"></rect>
+                        </mask>
+                        <g mask="url(#mask0_330_7195)">
+                          <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                      </svg>
+                    </span>
+                    <input type="text" id="name" value="Jessica Smith" class="profile-custom-input">
+                  </div>
+                  <div class="mobile-form mt-16">
+                    <input type="number" id="mobile_code" class="profile-custom-input" value="2356548899">
+                  </div>
+                </form>
+                <div class="update-change-btn mt-32">
+                  <a href="account-screen.html">Update Changes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile edit screen content end -->
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/intlTelInput.min.js"></script>
+  <script src="assets/js/flag.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>

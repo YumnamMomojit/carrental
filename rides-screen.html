@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Taxigo - Taxi Booking Mobile App</title>
+	<link rel="icon" href="assets/images/favicon/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body class="rides-body">
+	<div class="site-content rides-main">
+		<!-- Preloader start -->
+		<div class="loader-mask">
+			<div class="loading-window">
+				<div class="car">
+					<div class="strike"></div>
+					<div class="strike strike2"></div>
+					<div class="strike strike3"></div>
+					<div class="strike strike4"></div>
+					<div class="strike strike5"></div>
+					<div class="car-detail spoiler"></div>
+					<div class="car-detail back"></div>
+					<div class="car-detail center"></div>
+					<div class="car-detail center1"></div>
+					<div class="car-detail front"></div>
+					<div class="car-detail wheel"></div>
+					<div class="car-detail wheel wheel2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Preloader end -->
+		<!-- Header start -->
+		<header id="top-header">
+			<div class="header-wrap">
+				<div class="header-back">
+					<a href="javascript:history.go(-1)">
+						<img src="assets/svg/back-btn-white.svg" alt="back-btn">
+					</a>
+				</div>
+				<div class="header-name">
+					<p>My Rides</p>
+				</div>
+			</div>
+			<div class="boder"></div>
+		</header>
+		<!-- Header end -->
+		<!-- Rides screen content start-->
+		<section id="rides-upcoming">
+			<div class="rides-upcoming-wrap">
+				<h1 class="d-none">Hidden</h1>
+				<ul class="nav nav-pills order-screen2-tab" id="rides-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active order-screen2-tab-btn" id="active-tab" data-bs-toggle="pill" data-bs-target="#active-ride" type="button" role="tab"  aria-selected="true">Active Now</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link order-screen2-tab-btn" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab"  aria-selected="false">Upcoming</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link order-screen2-tab-btn" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab"  aria-selected="false">History</button>
+					</li>
+				</ul>
+				<div class="tab-content container" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="active-ride" role="tabpanel"  tabindex="0">
+						<div class="ride-active-now-wrap mt-24">
+							<div class="active-ride-sec">
+								<p class="ride-time">Dec 15, 2024 | 10:15 AM</p>
+								<div class="ride-details">
+									<div class="driver-trip-first-sec-wrap">
+										<div class="driver-img">
+											<img src="assets/images/rides/driver1.png" alt="driver-img">
+										</div>
+										<div class="driver-details">
+											<div class="driver-details-wrap">
+												<div class="driver-name">
+													<p>Tom Hegde</p>
+												</div>
+												<div class="driver-rate">
+													<div class="star-img"><img src="assets/images/map/star.svg" alt="star"></div>
+													<div class="rate-txt">4.8</div>
+												</div>
+											</div>
+											<p class="driver-title">Toyata Vios (CA3751)</p>
+										</div>
+										<div class="ride-active">
+											<p>Active</p>
+										</div>
+									</div>
+									<div class="boder mt-16"></div>
+									<div class="ride-track mt-16">
+										<div class="ride-track1">
+											<div class="yellow"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">199 Brown Estate Apt. 866</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">10:15 AM</p>
+										</div>
+									</div>
+									<div class="ride-track ride-track mt-24">
+										<div class="ride-track1">
+											<div class="black"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">856 Spinka Inlet Apt. 567</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">11:00 AM</p>
+										</div>
+									</div>
+									<div class="moretext">
+										<div class="boder mt-16"></div>
+										<div class="ride-more-content mt-16">
+											<div>
+												<span><img src="assets/images/rides/icon1.svg" alt="icon-img"></span>
+												<span class="ride-txt3">4.5 KM</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon2.svg" alt="icon-img"></span>
+												<span class="ride-txt3">15 Min</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon3.svg" alt="icon-img"></span>
+												<span class="ride-txt3">$45</span>
+											</div>	
+										</div>
+										<div class="ride-map-img mt-24">
+											<img src="assets/images/rides/map-img.png" alt="map-img">
+										</div>
+										<div class="track-ride mt-32">
+											<a href="#">Track Ride</a>
+										</div>
+									</div>
+									<div class="moreless-button">
+										<img src="assets/images/map/read_less_image.svg" alt="Read more">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="upcoming" role="tabpanel" tabindex="0">
+						<div class="upcoming-tab-wrap mt-24">
+							<div class="active-ride-sec">
+								<p class="ride-time">Dec 17, 2024 | 04:30 PM</p>
+								<div class="ride-details">
+									<div class="driver-trip-first-sec-wrap">
+										<div class="driver-img">
+											<img src="assets/images/rides/driver2.png" alt="driver-img">
+										</div>
+										<div class="driver-details">
+											<div class="driver-details-wrap">
+												<div class="driver-name">
+													<p>Daniel Austin</p>
+												</div>
+												<div class="driver-rate">
+													<div class="star-img"><img src="assets/images/map/star.svg" alt="star"></div>
+													<div class="rate-txt">4.8</div>
+												</div>
+											</div>
+											<p class="driver-title">Mercedes Benz C56 (HSW3211)</p>
+										</div>
+										<div class="ride-active green">
+											<p>New</p>
+										</div>
+									</div>
+									<div class="boder mt-16"></div>
+									<div class="ride-track mt-16">
+										<div class="ride-track1">
+											<div class="yellow"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">35 Oak Ave. Antioch, TN 37012</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">04:30 PM</p>
+										</div>
+									</div>
+									<div class="ride-track ride-track mt-24">
+										<div class="ride-track1">
+											<div class="black"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">26 State St. Daphne, AL 36526</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">05:10 PM</p>
+										</div>
+									</div>
+									<div class="moretext">
+										<div class="boder mt-16"></div>
+										<div class="ride-more-content mt-16">
+											<div>
+												<span><img src="assets/images/rides/icon1.svg" alt="icon-img"></span>
+												<span class="ride-txt3">4.5 KM</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon2.svg" alt="icon-img"></span>
+												<span class="ride-txt3">15 Min</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon3.svg" alt="icon-img"></span>
+												<span class="ride-txt3">$45</span>
+											</div>	
+										</div>
+										<div class="ride-map-img mt-24">
+											<img src="assets/images/rides/map-img.png" alt="map-img">
+										</div>
+										<div class="track-ride mt-32">
+											<a href="#">Track Ride</a>
+										</div>
+									</div>
+									<div class="moreless-button">
+										<img src="assets/images/map/read_less_image.svg" alt="Read more">
+									</div>
+								</div>
+							</div>
+							<div class="active-ride-sec mt-24">
+								<p class="ride-time">Dec 30, 2024 | 02:00 PM</p>
+								<div class="ride-details">
+									<div class="driver-trip-first-sec-wrap">
+										<div class="driver-img">
+											<img src="assets/images/rides/driver3.png" alt="driver-img">
+										</div>
+										<div class="driver-details">
+											<div class="driver-details-wrap">
+												<div class="driver-name">
+													<p>Johny Erick</p>
+												</div>
+												<div class="driver-rate">
+													<div class="star-img"><img src="assets/images/map/star.svg" alt="star"></div>
+													<div class="rate-txt">4.8</div>
+												</div>
+											</div>
+											<p class="driver-title">KIA Ciz56 (NSW11)</p>
+										</div>
+										<div class="ride-active green">
+											<p>New</p>
+										</div>
+									</div>
+									<div class="boder mt-16"></div>
+									<div class="ride-track mt-16">
+										<div class="ride-track1">
+											<div class="yellow"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">637 Sawayn Springs Apt. 979</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">02:00 PM</p>
+										</div>
+									</div>
+									<div class="ride-track ride-track mt-24">
+										<div class="ride-track1">
+											<div class="black"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">501 Ortiz Cove Suite 961</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">02:30 PM</p>
+										</div>
+									</div>
+									<div class="moretext">
+										<div class="boder mt-16"></div>
+										<div class="ride-more-content mt-16">
+											<div>
+												<span><img src="assets/images/rides/icon1.svg" alt="icon-img"></span>
+												<span class="ride-txt3">4.5 KM</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon2.svg" alt="icon-img"></span>
+												<span class="ride-txt3">15 Min</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon3.svg" alt="icon-img"></span>
+												<span class="ride-txt3">$45</span>
+											</div>	
+										</div>
+										<div class="ride-map-img mt-24">
+											<img src="assets/images/rides/map-img.png" alt="map-img">
+										</div>
+										<div class="track-ride mt-32">
+											<a href="#">Track Ride</a>
+										</div>
+									</div>
+									<div class="moreless-button">
+										<img src="assets/images/map/read_less_image.svg" alt="Read more">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="history" role="tabpanel" tabindex="0">
+						<div class="history-tab-wrap mt-24">
+							<div class="active-ride-sec">
+								<p class="ride-time">Dec 10, 2024 | 04:30 PM</p>
+								<div class="ride-details">
+									<div class="driver-trip-first-sec-wrap">
+										<div class="driver-img">
+											<img src="assets/images/rides/driver4.png" alt="driver-img">
+										</div>
+										<div class="driver-details">
+											<div class="driver-details-wrap">
+												<div class="driver-name">
+													<p>Jane Cooper</p>
+												</div>
+												<div class="driver-rate">
+													<div class="star-img"><img src="assets/images/map/star.svg" alt="star"></div>
+													<div class="rate-txt">4.8</div>
+												</div>
+											</div>
+											<p class="driver-title">Toyota Vios Limo (HDY2915)</p>
+										</div>
+										<div class="ride-active green">
+											<p>Done</p>
+										</div>
+									</div>
+									<div class="boder mt-16"></div>
+									<div class="ride-track mt-16">
+										<div class="ride-track1">
+											<div class="yellow"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">6 Glendale St. Worcester, MA</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">04:30 PM</p>
+										</div>
+									</div>
+									<div class="ride-track ride-track mt-24">
+										<div class="ride-track1">
+											<div class="black"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">83 Cypress Street Lowood, FL</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">05:10 PM</p>
+										</div>
+									</div>
+									<div class="moretext">
+										<div class="boder mt-16"></div>
+										<div class="ride-more-content mt-16">
+											<div>
+												<span><img src="assets/images/rides/icon1.svg" alt="icon-img"></span>
+												<span class="ride-txt3">4.5 KM</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon2.svg" alt="icon-img"></span>
+												<span class="ride-txt3">15 Min</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon3.svg" alt="icon-img"></span>
+												<span class="ride-txt3">$45</span>
+											</div>	
+										</div>
+										<div class="ride-map-img mt-24">
+											<img src="assets/images/rides/map-img.png" alt="map-img">
+										</div>
+										<div class="track-ride mt-32">
+											<a href="#">Track Ride</a>
+										</div>
+									</div>
+									<div class="moreless-button">
+										<img src="assets/images/map/read_less_image.svg" alt="Read more">
+									</div>
+								</div>
+							</div>
+							<div class="active-ride-sec mt-24">
+								<p class="ride-time">Nov 30, 2024 | 02:00 PM</p>
+								<div class="ride-details">
+									<div class="driver-trip-first-sec-wrap">
+										<div class="driver-img">
+											<img src="assets/images/rides/driver5.png" alt="driver-img">
+										</div>
+										<div class="driver-details">
+											<div class="driver-details-wrap">
+												<div class="driver-name">
+													<p>Albert Flores</p>
+												</div>
+												<div class="driver-rate">
+													<div class="star-img"><img src="assets/images/map/star.svg" alt="star"></div>
+													<div class="rate-txt">4.8</div>
+												</div>
+											</div>
+											<p class="driver-title">Toyota Alphard (HAY2743)</p>
+										</div>
+										<div class="ride-active red">
+											<p>Cancel</p>
+										</div>
+									</div>
+									<div class="boder mt-16"></div>
+									<div class="ride-track mt-16">
+										<div class="ride-track1">
+											<div class="yellow"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">86 N Ohio Court Norfoik, VA</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">02:00 PM</p>
+										</div>
+									</div>
+									<div class="ride-track ride-track mt-24">
+										<div class="ride-track1">
+											<div class="black"></div>
+										</div>
+										<div class="ride-address">
+											<p class="ride-txt1">9037 Spruce Avenue Nutly, NJ</p>
+										</div>
+										<div class="ride-track-time">
+											<p class="ride-txt2">02:30 PM</p>
+										</div>
+									</div>
+									<div class="moretext">
+										<div class="boder mt-16"></div>
+										<div class="ride-more-content mt-16">
+											<div>
+												<span><img src="assets/images/rides/icon1.svg" alt="icon-img"></span>
+												<span class="ride-txt3">4.5 KM</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon2.svg" alt="icon-img"></span>
+												<span class="ride-txt3">15 Min</span>
+											</div>
+											<div>
+												<span><img src="assets/images/rides/icon3.svg" alt="icon-img"></span>
+												<span class="ride-txt3">$45</span>
+											</div>	
+										</div>
+										<div class="ride-map-img mt-24">
+											<img src="assets/images/rides/map-img.png" alt="map-img">
+										</div>
+										<div class="track-ride mt-32">
+											<a href="#">Track Ride</a>
+										</div>
+									</div>
+									<div class="moreless-button">
+										<img src="assets/images/map/read_less_image.svg" alt="Read more">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Rides screen content end-->
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taxigo - Taxi Booking Mobile App</title>
+  <link rel="icon" href="assets/images/favicon/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media-query.css">
+</head>
+<body>
+  <div class="site-content">
+    <!-- Preloader start -->
+    <div class="loader-mask">
+      <div class="loading-window">
+        <div class="car">
+          <div class="strike"></div>
+          <div class="strike strike2"></div>
+          <div class="strike strike3"></div>
+          <div class="strike strike4"></div>
+          <div class="strike strike5"></div>
+          <div class="car-detail spoiler"></div>
+          <div class="car-detail back"></div>
+          <div class="car-detail center"></div>
+          <div class="car-detail center1"></div>
+          <div class="car-detail front"></div>
+          <div class="car-detail wheel"></div>
+          <div class="car-detail wheel wheel2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- Header start -->
+    <header id="header-top">
+      <div class="container">
+        <div class="header-top-wrap">
+          <div class="header-wrap">
+            <div class="header-back">
+              <a href="javascript:history.go(-1)"><img src="assets/svg/back-btn-arrow.svg" alt="back-btn"></a>
+            </div>
+            <div class="header-name-taxigo">
+              <p>Taxigo Platinum</p>
+            </div>
+          </div>
+          <div class="cup-img">
+            <img src="assets/images/taxigo-platinum/cup-icon.svg" alt="icon">
+          </div>
+          <div class="range-slider">
+            <span id="rangeValue">0</span>
+            <span class="ride-txt">/15 Rides Completed</span>
+          </div>
+          <Input class="range" type="range" value="5" min="0" max="15" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+          <p class="completee-txt mt-24">Complete 20 more rides by Nov 30 to reach Platinum Status</p> 
+        </div>
+      </div> 
+    </header>
+    <!-- Header end -->
+    <!-- Platium taxigo screen content start -->
+    <section id="taxigo-platinum-content">
+      <div class="container">
+        <div class="taxigo-platinum-content-wrap">
+          <h1 class="d-none">Hidden</h1>
+          <div class="benefits-sec mt-24">
+            <h2>Benefits</h2>
+            <div class="benefits-details">
+              <div class="benefit-icon">
+                <img src="assets/images/taxigo-platinum/points.svg" alt="icon">
+              </div>
+              <div class="benefit-content">
+                <h3>Extra Points</h3>
+                <p>You’ll earn 70% more points every time you spend with pick up</p>
+              </div>
+            </div>
+            <div class="benefits-details">
+              <div class="benefit-icon">
+                <img src="assets/images/taxigo-platinum/support.svg" alt="icon">
+              </div>
+              <div class="benefit-content">
+                <h3>Exclusive Support</h3>
+                <p>Receive best of the best customer service for our Platinum members</p>
+              </div>
+            </div>
+            <div class="benefits-details">
+              <div class="benefit-icon">
+                <img src="assets/images/taxigo-platinum/offers.svg" alt="icon">
+              </div>
+              <div class="benefit-content">
+                <h3>Special Offers</h3>
+                <p>Receive special offers and rewards in your city</p>
+              </div>
+            </div>
+            <div class="boder mt-24"></div>
+          </div> 
+          <div class="benefits-work-sec mt-24">
+            <h2>How It Works</h2>
+            <p class="get-txt">Getting rewards with Taxigo is as easy as taking a ride!</p>
+            <div class="benefits-details">
+              <div class="benefit-icon">
+                <img src="assets/images/taxigo-platinum/work1.svg" alt="icon">
+              </div>
+              <div class="benefit-content">
+                <p>Use your points to take free rides or spend it on any of the offers above</p>
+              </div>
+            </div>
+            <div class="benefits-details">
+              <div class="benefit-icon">
+                <img src="assets/images/taxigo-platinum/work2.svg" alt="icon">
+              </div>
+              <div class="benefit-content">
+                <p>Complete 20 rides a month to reach Platinum Status and get 70% more points</p>
+              </div>
+            </div>
+            <div class="boder mt-24"></div>
+          </div>
+          <div class="bottom-faq benefits-work-sec mt-24 ">
+            <h2>FAQs </h2>
+            <h3 class="d-none">Hidden</h3>
+            <h4 class="d-none">Hidden</h4>
+            <div class="home_faq_accodian_area">
+              <div class="home_faq_accodian_item">
+                <div class="home_faq_accodian_title active">
+                  <h5 class="faq-que">How do I earn Platinum Status?</h5>
+                </div>
+                <div class="home_faq_accodian_tab">
+                  Complete 20 rides a month to reach Platinum Status and get 70% more points and other special benefits.
+                </div>
+              </div>
+              <div class="home_faq_accodian_item">
+                <div class="home_faq_accodian_title">
+                  <h5 class="faq-que">How do I maintain Platinum Status?</h5>
+                </div>
+                <div class="home_faq_accodian_tab">
+                  Complete 20 rides a month to reach Platinum Status and get 70% more points and other special benefits.
+                </div>
+              </div>
+              <div class="home_faq_accodian_item">
+                <div class="home_faq_accodian_title">
+                  <h5 class="faq-que">Are my Platinum benefits applicable in other countries?</h5>
+                </div>
+                <div class="home_faq_accodian_tab">
+                  Complete 20 rides a month to reach Platinum Status and get 70% more points and other special benefits.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Platium taxigo screen content end -->
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
