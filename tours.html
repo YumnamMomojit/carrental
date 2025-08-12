@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our wide range of tours. Filter by category, price, and more to find your perfect trip.">
+    <meta name="keywords" content="tours, adventure tours, beach holidays, city breaks, travel packages">
+    <title>Our Tours - Travelz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Travelz</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="custom-trip.html">Custom Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="tour-listing-page">
+            <h1>Explore Our Tours</h1>
+            <aside class="filters">
+                <h3>Filter Tours</h3>
+                <div class="filter-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="all">All</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="beach">Beach</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="city">City</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range</label>
+                    <input type="range" id="price" name="price" min="500" max="5000" value="5000">
+                    <span id="price-value">$500 - $5000</span>
+                </div>
+                <div class="filter-group">
+                    <label for="duration">Duration (days)</label>
+                    <input type="number" id="duration" name="duration" min="1" placeholder="e.g., 7">
+                </div>
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Paris">
+                </div>
+                <button class="btn" id="filter-btn">Apply Filters</button>
+            </aside>
+            <section class="tour-list">
+                <!-- Tour cards will be dynamically inserted here or listed statically -->
+                <div class="tour-card" data-category="adventure" data-price="1200" data-duration="7" data-location="Paris">
+                    <img src="images/tour-1.jpg" alt="Tour in Paris">
+                    <div class="tour-card-content">
+                        <h3>Adventure in Paris</h3>
+                        <p class="duration">7 Days</p>
+                        <p class="description">Experience the thrill of adventure in the city of love.</p>
+                        <p class="price">$1,200</p>
+                        <div class="card-buttons">
+                            <a href="booking.html" class="btn">Book Now</a>
+                            <a href="tour-details.html" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card" data-category="beach" data-price="1800" data-duration="10" data-location="Maldives">
+                    <img src="images/tour-4.jpg" alt="Tour in Maldives">
+                    <div class="tour-card-content">
+                        <h3>Maldives Beach Paradise</h3>
+                        <p class="duration">10 Days</p>
+                        <p class="description">Relax on the beautiful white sand beaches of the Maldives.</p>
+                        <p class="price">$1,800</p>
+                        <div class="card-buttons">
+                            <a href="booking.html" class="btn">Book Now</a>
+                            <a href="tour-details.html" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="tour-card" data-category="cultural" data-price="1500" data-duration="8" data-location="Kyoto">
+                    <img src="images/tour-2.jpg" alt="Tour in Kyoto">
+                    <div class="tour-card-content">
+                        <h3>Cultural Journey in Kyoto</h3>
+                        <p class="duration">8 Days</p>
+                        <p class="description">Explore the ancient temples and gardens of Kyoto.</p>
+                        <p class="price">$1,500</p>
+                        <div class="card-buttons">
+                            <a href="booking.html" class="btn">Book Now</a>
+                            <a href="tour-details.html" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-card" data-category="city" data-price="2500" data-duration="5" data-location="New York">
+                    <img src="images/dest-3.jpg" alt="Tour in New York">
+                    <div class="tour-card-content">
+                        <h3>New York City Explorer</h3>
+                        <p class="duration">5 Days</p>
+                        <p class="description">Discover the iconic landmarks of the Big Apple.</p>
+                        <p class="price">$2,500</p>
+                        <div class="card-buttons">
+                            <a href="booking.html" class="btn">Book Now</a>
+                            <a href="tour-details.html" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travelz. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

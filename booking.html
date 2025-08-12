@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your booking with Travelz. Secure payment and instant confirmation.">
+    <meta name="keywords" content="booking, travel booking, secure payment, tour booking">
+    <title>Book Your Trip - Travelz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Travelz</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="custom-trip.html">Custom Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="booking-page">
+            <h1>Book Your Trip</h1>
+            <div class="booking-content">
+                <div class="package-details">
+                    <h2>Your Selected Package</h2>
+                    <div class="tour-card">
+                        <img src="images/tour-1.jpg" alt="Tour in Paris">
+                        <div class="tour-card-content">
+                            <h3>Adventure in Paris</h3>
+                            <p class="duration">7 Days</p>
+                            <p class="price">$1,200</p>
+                        </div>
+                    </div>
+                    <h3>Total Price: $1,200</h3>
+                </div>
+                <div class="booking-form-container">
+                    <h2>Personal Information</h2>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <h2>Payment Method</h2>
+                        <div class="payment-methods">
+                            <label><input type="radio" name="payment" value="credit-card" checked> Credit Card</label>
+                            <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+                            <label><input type="radio" name="payment" value="bank-transfer"> Bank Transfer</label>
+                        </div>
+                        <button type="submit" class="btn">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+            <div id="confirmation-message" style="display: none; text-align: center; margin-top: 40px;">
+                <h2>Thank you for your booking!</h2>
+                <p>A confirmation email has been sent to you.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travelz. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

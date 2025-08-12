@@ -1,13 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental - Book Your Perfect Ride</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your next adventure starts here. Book tours and travel packages with Travelz.">
+    <meta name="keywords" content="travel, tours, booking, vacation, holiday, adventure">
+    <title>Travelz - Your Adventure Awaits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Travelz</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="custom-trip.html">Custom Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Next Adventure</h1>
+                <p>Discover the world with our amazing tour packages.</p>
+                <form class="search-form">
+                    <input type="text" placeholder="Destination">
+                    <select>
+                        <option value="">Trip Type</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="beach">Beach</option>
+                        <option value="cultural">Cultural</option>
+                    </select>
+                    <input type="date" placeholder="Date">
+                    <input type="text" placeholder="Duration (e.g., 7 days)">
+                    <input type="text" placeholder="Price Range (e.g., $500 - $1000)">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="featured-tours">
+            <h2>Featured Tours</h2>
+            <div class="tour-packages">
+                <div class="tour-card">
+                    <img src="images/tour-1.jpg" alt="Tour 1">
+                    <h3>Paris, France</h3>
+                    <p>Price: $1,200</p>
+                    <a href="tour-details.html" class="btn">View Details</a>
+                </div>
+                <div class="tour-card">
+                    <img src="images/tour-2.jpg" alt="Tour 2">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Price: $1,500</p>
+                    <a href="tour-details.html" class="btn">View Details</a>
+                </div>
+                <div class="tour-card">
+                    <img src="images/tour-3.jpg" alt="Tour 3">
+                    <h3>Santorini, Greece</h3>
+                    <p>Price: $1,800</p>
+                    <a href="tour-details.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <img src="images/dest-1.jpg" alt="Destination 1">
+                    <div class="destination-name">Rome, Italy</div>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dest-2.jpg" alt="Destination 2">
+                    <div class="destination-name">Bali, Indonesia</div>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dest-3.jpg" alt="Destination 3">
+                    <div class="destination-name">New York, USA</div>
+                </div>
+                <div class="destination-item">
+                    <img src="images/dest-4.jpg" alt="Destination 4">
+                    <div class="destination-name">Dubai, UAE</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-container">
+                <div class="reviews-carousel">
+                    <div class="review">
+                        <p>"The best travel agency I have ever worked with. They are very professional and helpful."</p>
+                        <div class="reviewer">- John Doe</div>
+                    </div>
+                    <div class="review">
+                        <p>"I had an amazing time on my trip to Japan. Everything was perfectly organized."</p>
+                        <div class="reviewer">- Jane Smith</div>
+                    </div>
+                    <div class="review">
+                        <p>"A truly unforgettable experience. I will definitely book with Travelz again."</p>
+                        <div class="reviewer">- Peter Jones</div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&lt;</button>
+                <button class="carousel-btn next">&gt;</button>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-content">
+                <h2>Special Offers</h2>
+                <p>Get up to 20% off on selected tour packages. Don't miss out!</p>
+                <a href="tours.html" class="btn">View Offers</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travelz. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
