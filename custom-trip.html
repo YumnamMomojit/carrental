@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design your own custom trip with Travelz. Our experts will create a personalized itinerary just for you.">
+    <meta name="keywords" content="custom trip, personalized travel, tailor-made holiday, travel planner">
+    <title>Design a Custom Trip - Travelz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Travelz</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="custom-trip.html">Custom Trip</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="custom-trip-form-section">
+            <h1>Design Your Custom Trip</h1>
+            <p>Fill out the form below and our travel experts will get back to you with a personalized itinerary and quote.</p>
+            <form class="custom-trip-form">
+                <div class="form-group">
+                    <label for="destinations">Destination(s)</label>
+                    <input type="text" id="destinations" placeholder="e.g., Paris, Rome, Barcelona" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-category">Hotel Category</label>
+                    <select id="hotel-category">
+                        <option>3-Star</option>
+                        <option>4-Star</option>
+                        <option>5-Star</option>
+                        <option>Boutique</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Transport Preferences</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="transport" value="flights"> Flights</label>
+                        <label><input type="checkbox" name="transport" value="trains"> Trains</label>
+                        <label><input type="checkbox" name="transport" value="private-car"> Private Car</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="activities">Preferred Activities</label>
+                    <textarea id="activities" rows="4" placeholder="e.g., Historical sites, adventure sports, cooking classes"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Range (per person)</label>
+                    <select id="budget">
+                        <option>< $1,000</option>
+                        <option>$1,000 - $2,000</option>
+                        <option>$2,000 - $4,000</option>
+                        <option>$4,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="documents">Upload Documents (e.g., passport copy)</label>
+                    <input type="file" id="documents">
+                </div>
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travelz. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

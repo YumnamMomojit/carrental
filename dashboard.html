@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Travelz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2>Travelz Admin</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Enquiries</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <h1>Welcome, Admin!</h1>
+            </header>
+
+            <section class="analytics-cards">
+                <div class="card">
+                    <h3>Total Bookings</h3>
+                    <p>1,234</p>
+                </div>
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <p>$1,480,800</p>
+                </div>
+                <div class="card">
+                    <h3>Site Visits</h3>
+                    <p>15,678</p>
+                </div>
+                <div class="card">
+                    <h3>New Enquiries</h3>
+                    <p>56</p>
+                </div>
+            </section>
+
+            <section class="recent-bookings">
+                <h2>Recent Bookings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tour Name</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adventure in Paris</td>
+                            <td>John Doe</td>
+                            <td>2024-08-15</td>
+                            <td>Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>Maldives Beach Paradise</td>
+                            <td>Jane Smith</td>
+                            <td>2024-09-01</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="manage-tours">
+                <h2>Manage Tours</h2>
+                <button class="btn">Add New Tour</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tour Name</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adventure in Paris</td>
+                            <td>$1,200</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Maldives Beach Paradise</td>
+                            <td>$1,800</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
