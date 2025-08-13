@@ -757,3 +757,67 @@ thead {
         padding: 10px;
     }
 }
+
+/* AI Trip Planner Page */
+.ai-trip-form-section {
+    display: flex;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.form-container {
+    flex: 1;
+    background: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 30px;
+}
+
+#ai-trip-form .form-group {
+    margin-bottom: 20px;
+}
+
+#ai-trip-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#ai-trip-form input,
+#ai-trip-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#ai-trip-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.trip-results-container {
+    flex: 1;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+#trip-output {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}

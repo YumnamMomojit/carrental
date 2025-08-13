@@ -182,4 +182,39 @@ document.addEventListener('DOMContentLoaded', () => {
             itinerary.appendChild(newDayItem);
         });
     }
+
+    // AI Trip Planner Form
+    const aiTripForm = document.getElementById('ai-trip-form');
+    if (aiTripForm) {
+        const tripOutput = document.getElementById('trip-output');
+
+        aiTripForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const destination = document.getElementById('destination').value;
+            const days = document.getElementById('days').value;
+            const travelStyle = document.getElementById('travel-style').value;
+
+            // Simple validation
+            if (!destination || !days) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            tripOutput.innerHTML = '<p>Generating your itinerary...</p>';
+
+            // Simulate AI response
+            setTimeout(() => {
+                let itinerary = `<h3>Your ${travelStyle} Trip to ${destination}</h3>`;
+                itinerary += `<p><strong>Duration:</strong> ${days} days</p>`;
+                itinerary += '<ul>';
+                for (let i = 1; i <= days; i++) {
+                    itinerary += `<li><strong>Day ${i}:</strong> Explore the heart of ${destination}.</li>`;
+                }
+                itinerary += '</ul>';
+
+                tripOutput.innerHTML = itinerary;
+            }, 2000);
+        });
+    }
 });
