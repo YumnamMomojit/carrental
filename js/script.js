@@ -73,6 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Hero Slider
+    const heroSlider = document.querySelector('.hero-slider');
+    if (heroSlider) {
+        const slides = Array.from(heroSlider.children);
+        let currentSlide = 0;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+    }
+
     // Sticky Header
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {

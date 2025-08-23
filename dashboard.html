@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Travelz</title>
+    <meta name="description" content="Manage your Travelz account and bookings.">
+    <title>User Dashboard - Travelz</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,90 +12,56 @@
     <div class="dashboard-container">
         <aside class="dashboard-sidebar">
             <div class="sidebar-header">
-                <h2>Travelz Admin</h2>
+                <h3>Travelz Dashboard</h3>
             </div>
             <ul class="sidebar-nav">
-                <li class="active"><a href="#">Dashboard</a></li>
-                <li><a href="#">Tours</a></li>
-                <li><a href="#">Bookings</a></li>
-                <li><a href="#">Enquiries</a></li>
-                <li><a href="#">Analytics</a></li>
+                <li class="active"><a href="#">Profile</a></li>
+                <li><a href="#">Booking History</a></li>
+                <li><a href="#">Settings</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
         </aside>
         <main class="dashboard-main">
-            <header class="dashboard-header">
-                <h1>Welcome, Admin!</h1>
-            </header>
-
-            <section class="analytics-cards">
-                <div class="card">
-                    <h3>Total Bookings</h3>
-                    <p>1,234</p>
-                </div>
-                <div class="card">
-                    <h3>Total Revenue</h3>
-                    <p>$1,480,800</p>
-                </div>
-                <div class="card">
-                    <h3>Site Visits</h3>
-                    <p>15,678</p>
-                </div>
-                <div class="card">
-                    <h3>New Enquiries</h3>
-                    <p>56</p>
-                </div>
+            <h1>Welcome, User!</h1>
+            <section class="profile-section">
+                <h2>Your Profile</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" value="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="john.doe@example.com" disabled>
+                    </div>
+                    <button type="submit" class="btn">Update Profile</button>
+                </form>
             </section>
-
-            <section class="recent-bookings">
-                <h2>Recent Bookings</h2>
+            <section class="booking-history">
+                <h2>Booking History</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Tour Name</th>
-                            <th>Customer</th>
+                            <th>Package</th>
                             <th>Date</th>
                             <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Adventure in Paris</td>
-                            <td>John Doe</td>
-                            <td>2024-08-15</td>
-                            <td>Confirmed</td>
+                            <td>Paris Adventure</td>
+                            <td>2024-10-15</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
                         </tr>
                         <tr>
-                            <td>Maldives Beach Paradise</td>
-                            <td>Jane Smith</td>
-                            <td>2024-09-01</td>
-                            <td>Pending</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section class="manage-tours">
-                <h2>Manage Tours</h2>
-                <button class="btn">Add New Tour</button>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tour Name</th>
-                            <th>Price</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Adventure in Paris</td>
-                            <td>$1,200</td>
-                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                            <td>Rome Discovery</td>
+                            <td>2024-05-20</td>
+                            <td><span class="status completed">Completed</span></td>
                         </tr>
                         <tr>
-                            <td>Maldives Beach Paradise</td>
-                            <td>$1,800</td>
-                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                            <td>New York Explorer</td>
+                            <td>2023-11-30</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
                         </tr>
                     </tbody>
                 </table>

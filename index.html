@@ -7,6 +7,7 @@
     <meta name="keywords" content="travel, tours, booking, vacation, holiday, adventure">
     <title>Travelz - Your Adventure Awaits</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,8 +25,13 @@
     </header>
     <main>
         <section class="hero">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('https://via.placeholder.com/1920x1080/0000FF/808080?Text=Slide+1');"></div>
+                <div class="slide" style="background-image: url('https://via.placeholder.com/1920x1080/FF0000/808080?Text=Slide+2');"></div>
+                <div class="slide" style="background-image: url('https://via.placeholder.com/1920x1080/00FF00/808080?Text=Slide+3');"></div>
+            </div>
             <div class="hero-content">
-                <h1>Find Your Next Adventure</h1>
+                <h1>Plan Your Travel Now!</h1>
                 <p>Discover the world with our amazing tour packages.</p>
                 <form class="search-form">
                     <input type="text" placeholder="Destination">
@@ -118,9 +124,59 @@
                 <a href="tours.html" class="btn">View Offers</a>
             </div>
         </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest news, updates, and special offers delivered directly to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Travelz. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 class="logo-text">Travelz</h3>
+                <p>
+                    Travelz is a travel agency that specializes in creating unforgettable travel experiences. We offer a wide range of tour packages and custom trip options to suit every traveler's needs.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-7890</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@travelz.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="custom-trip.html">Custom Trip</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contact Us</h3>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Travelz. All rights reserved.
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
